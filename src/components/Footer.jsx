@@ -1,8 +1,6 @@
-import React from 'react'
-
 function Footer() {
   return (
-    <div>Footer</div>
+    <div className="bg-background text-clr-primary py-4 text-center">Footer</div>
   )
 }
 

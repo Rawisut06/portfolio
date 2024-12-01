@@ -15,3 +15,7 @@
 
   background: rgba((var(--background)));
 }
+
+.text-primary {
+  @apply text-5xl py-4 font-semibold
+}
