@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  html {
+    @apply scroll-smooth
+  }
+}
+
 .light {
   --background: 0, 0, 0;
   --clr-primary: 255, 255, 255;

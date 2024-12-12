@@ -1,7 +1,9 @@
-function Footer() {
+const Footer = () => {
   return (
-    <div className="bg-background text-clr-primary py-4 text-center">Footer</div>
-  )
-}
+    <div className="p-4 text-center bg-background text-clr-primary">
+      &copy; 2024 Rawisut all right reserved
+    </div>
+  );
+};
 
-export default Footer
+export default Footer;
