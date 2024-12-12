@@ -1,5 +1,4 @@
-// import skills from "../assets/skills/Skills";
-import HTML5 from "../assets/skills/html5";
+import HTML5 from "../assets/skills/HTML5";
 import CSS from "../assets/skills/CSS3";
 import TailwindCSS from "../assets/skills/Tailwind CSS";
 import JavaScript from "../assets/skills/JavaScript";
