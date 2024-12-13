@@ -107,6 +107,7 @@ function Contact() {
             <div className="flex justify-center">
               <button
                 type="submit"
+                disabled={state.submitting}
                 className="flex items-center p-2 border-2 size-fit border-clr-primary hover:border-background hover:bg-clr-primary hover:text-background"
               >
                 Send Message

@@ -23,22 +23,6 @@ const projects = [
     github: "https://github.com/Rawisut06/28-rawisut-colmar",
     skills: ["HTML", "Tailwind CSS"],
   },
-  {
-    name: "Colmar Academy",
-    description: "A simple static website without Javascript in Generation bootcamp's assessment",
-    image: "/src/assets/projects/colmar.png",
-    link: "https://28-rawisut-colmar.vercel.app/",
-    github: "https://github.com/Rawisut06/28-rawisut-colmar",
-    skills: ["HTML", "Tailwind CSS"],
-  },
-  {
-    name: "Colmar Academy",
-    description: "A simple static website without Javascript in Generation bootcamp's assessment",
-    image: "/src/assets/projects/colmar.png",
-    link: "https://28-rawisut-colmar.vercel.app/",
-    github: "https://github.com/Rawisut06/28-rawisut-colmar",
-    skills: ["HTML", "Tailwind CSS"],
-  },
 ];
 
 export default projects;
