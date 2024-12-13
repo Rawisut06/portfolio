@@ -23,5 +23,17 @@
 }
 
 .text-primary {
-  @apply text-5xl py-4 font-semibold
+  @apply text-5xl font-semibold
 }
+.text-secondary {
+  @apply text-3xl font-semibold
+}
+
+.text-ternary {
+  @apply text-xl
+}
+
+br {
+  @apply pb-4
+}
+

@@ -8,7 +8,7 @@ function Navbar() {
 
   return (
     <nav
-      className="fixed w-full transition-all duration-75 ease-in-out bg-background text-clr-primary">
+      className="fixed w-full transition-transform duration-75 ease-in-out bg-background text-clr-primary">
       <div className="max-w-[1280px] mx-auto flex items-center justify-between p-4">
         <span>Rawisut Wannasopha</span>
         <ul className="flex space-x-4">

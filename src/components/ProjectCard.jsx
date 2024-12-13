@@ -1,9 +1,11 @@
+import Button from "./Button";
+
 function ProjectCard({ name, description, image, link, skills }) {
   return (
-    <div className="max-w-xs transition-shadow rounded-lg shadow-md hover:shadow-xl">
+    <div className="max-w-xs transition-shadow rounded-lg shadow-md bg-clr-primary hover:shadow-xl">
       <img src={image} alt={`${name}-image`} className="object-cover w-full h-48 rounded-t-lg" />
       <div className="p-4">
-        <h3 className="text-lg font-semibold">{name}</h3>
+        <h3 className="text-lg font-semibold text-background">{name}</h3>
         <p className="mt-2 text-sm text-gray-600">{description}</p>
         <div className="flex flex-wrap gap-2 mt-3">
           {skills.map((skill, index) => {
@@ -25,14 +27,18 @@ function ProjectCard({ name, description, image, link, skills }) {
             </span>
             )})}
         </div>
-        <a
-          href={link}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="block mt-4 text-blue-500 hover:underline"
-        >
-          View Project
-        </a>
+        <div className="flex justify-end gap-6">
+          <Button
+            name="live demo"
+            link={link}
+            className="block mt-4 text-blue-500 hover:underline"
+          />
+          <Button
+            name="github"
+            link={link}
+            className="block mt-4 text-blue-500 hover:underline"
+          />
+        </div>
       </div>
     </div>
   );

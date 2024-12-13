@@ -4,9 +4,9 @@ import ProjectCard from "../components/ProjectCard";
 function Project() {
   return (
     <section className="bg-background text-clr-primary" id="project">
-      <div className="flex flex-col justify-center items-center h-screen space-y-20 max-w-[1280px] mx-auto">
+      <div className="flex flex-col justify-center items-center h-fit space-y-20 max-w-[1280px] mx-auto">
         <h1 className="text-primary">Projects</h1>
-        <div className="flex flex-wrap gap-6">
+        <div className="flex flex-wrap justify-center gap-6">
           {projects.map((project, index) => (
             <ProjectCard
               key={index}
