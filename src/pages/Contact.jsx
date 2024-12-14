@@ -1,12 +1,10 @@
-import { FaLinkedin, FaGithub, FaEnvelope } from "react-icons/fa";
+import { FaGithub, FaEnvelope } from "react-icons/fa";
 import Button from "../components/Button";
 import { useForm, ValidationError } from '@formspree/react';
 
 function Contact() {
   const [state, handleSubmit] = useForm("mzzbqwnn");
-  if (state.succeeded) {
-      return <p>Thanks for joining!</p>;
-  }
+
   return (
     <section id="contact" className="text-center bg-background text-clr-primary">
       <div className="max-w-[1280px] mx-auto flex flex-col items-center space-y-20 h-fit">
@@ -29,13 +27,6 @@ function Contact() {
               />
 
               <Button
-                name="LinkedIn"
-                link="https://www.linkedin.com/in/rawisut"
-                icon={FaLinkedin}
-                className="flex items-center p-2 border-2 size-fit border-clr-primary hover:border-background hover:bg-clr-primary hover:text-background"
-              />
-
-              <Button
                 name="Github"
                 link="https://github.com/rawisut"
                 icon={FaGithub}
@@ -50,6 +41,11 @@ function Contact() {
             onSubmit={handleSubmit}
             className="max-w-md mx-auto w-[50%] bg-background border-clr-primary border-2 b p-6 shadow"
           >
+            {state.succeeded && (
+              <div className="mb-4 font-bold text-green-500">
+                Thank you! Your message has been sent.
+              </div>
+            )}
             <div className="mb-4">
               <label htmlFor="name" className="block mb-2 font-medium text-left">
                 Your Name
@@ -98,8 +94,8 @@ function Contact() {
                 className="w-full p-3 border-2 text-background border-clr-primary"
                 required
               />
-              <ValidationError 
-                prefix="Message" 
+              <ValidationError
+                prefix="Message"
                 field="message"
                 errors={state.errors}
               />
@@ -108,9 +104,11 @@ function Contact() {
               <button
                 type="submit"
                 disabled={state.submitting}
-                className="flex items-center p-2 border-2 size-fit border-clr-primary hover:border-background hover:bg-clr-primary hover:text-background"
+                className={`flex items-center p-2 border-2 border-clr-primary hover:border-background hover:bg-clr-primary hover:text-background ${
+                  state.submitting ? "opacity-50 cursor-not-allowed" : ""
+                }`}
               >
-                Send Message
+                {state.submitting ? "Sending..." : "Send Message"}
               </button>
             </div>
           </form>

@@ -5,7 +5,7 @@ function About() {
         <h1 className="text-primary">About Me</h1>
         <div className="flex gap-4 justify-stretch">
           <div className="flex justify-center w-1/2">
-            <img className="object-contain w-2/3 rounded-xl h-2/3" src="/src/assets/about-img.jpg" alt="about-img" />
+            <img className="object-contain w-full rounded-xl h-2/3" src="/src/assets/about-img.jpg" alt="about-img" />
           </div>
           <div className="w-1/2 text-left text-ternary">
             <p>Hi, I&apos;m Rawisut! I&apos;m a recent graduate from the Generation Bootcamp in Junior Software Development and hold a Bachelor&apos;s degree in Earth Sciences (Geology).</p>

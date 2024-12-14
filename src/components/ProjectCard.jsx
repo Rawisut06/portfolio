@@ -2,8 +2,10 @@ import Button from "./Button";
 
 function ProjectCard({ name, description, image, link, skills }) {
   return (
-    <div className="max-w-xs transition-shadow rounded-lg shadow-md bg-clr-primary hover:shadow-xl">
-      <img src={image} alt={`${name}-image`} className="object-cover w-full h-48 rounded-t-lg" />
+    <div className="max-w-xs transition-shadow shadow-md bg-clr-primary">
+      <div className="w-full h-48 overflow-hidden">
+        <img src={image} alt={`${name}-image`} className="object-cover w-full h-full duration-200 ease-in hover:scale-110" />
+      </div>
       <div className="p-4">
         <h3 className="text-lg font-semibold text-background">{name}</h3>
         <p className="mt-2 text-sm text-gray-600">{description}</p>
