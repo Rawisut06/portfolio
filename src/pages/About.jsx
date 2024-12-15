@@ -7,7 +7,7 @@ function About() {
         <Heading name="About Me" />
         <div className="flex flex-col items-center gap-4 justify-stretch md:flex-row">
           <div className="flex justify-center w-1/2">
-            <img className="object-contain w-1/2 rounded-lg" src="/src/assets/about-img.jpg" alt="about-img" />
+            <img className="object-contain w-1/2 rounded-lg" src="images/about-img.jpg" alt="about-img" />
           </div>
           <div className="w-1/2 text-left text-ternary">
             <p>Hi, I&apos;m Rawisut! I&apos;m a recent graduate from the Generation Bootcamp in Junior Software Development and hold a Bachelor&apos;s degree in Earth Sciences (Geology).</p>
