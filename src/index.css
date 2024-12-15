@@ -11,15 +11,15 @@
 .light {
   --background: 0, 0, 0;
   --clr-primary: 255, 255, 255;
+  --clr-secondary: 84, 101, 255;
 
-  background: rgba((var(--background)));
 }
 
 .dark {
   --background: 255, 255, 255;
   --clr-primary: 0, 0, 0;
+  --clr-secondary: 84, 101, 255;
 
-  background: rgba((var(--background)));
 }
 
 .text-primary {
@@ -37,3 +37,17 @@ br {
   @apply pb-4
 }
 
+.line {
+  @apply bg-clr-secondary w-full
+}
+
+.hover-shadow {
+  @apply hover:shadow-none duration-100 ease-in-out transition-shadow shadow-[16px_16px_0px_-1px_rgb(var(--clr-secondary))]
+}
+.hover-btn-shadow {
+  @apply hover:shadow-none duration-100 ease-in-out transition-shadow shadow-[8px_8px_0px_-1px_rgb(var(--clr-secondary))]
+}
+
+.hover-btn-bg {
+  @apply border-clr-primary duration-100 ease-in-out hover:border-clr-secondary hover:bg-clr-secondary hover:text-background
+}

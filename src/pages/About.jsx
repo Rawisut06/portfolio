@@ -1,11 +1,11 @@
 function About() {
   return (
-    <section className="text-center bg-background text-clr-primary" id="about">
+    <section className="py-20 text-center bg-background text-clr-primary" id="about">
       <div className="max-w-[1280px] mx-auto flex flex-col items-center space-y-20 h-screen">
-        <h1 className="text-primary">About Me</h1>
-        <div className="flex gap-4 justify-stretch">
+        <h1 className="relative text-primary w-fit">About Me <div className="absolute w-[40%] h-2 top-14 bg-clr-secondary" /> </h1>
+        <div className="flex flex-col items-center gap-4 justify-stretch md:flex-row">
           <div className="flex justify-center w-1/2">
-            <img className="object-contain w-full rounded-xl h-2/3" src="/src/assets/about-img.jpg" alt="about-img" />
+            <img className="object-contain w-1/2 rounded-lg" src="/src/assets/about-img.jpg" alt="about-img" />
           </div>
           <div className="w-1/2 text-left text-ternary">
             <p>Hi, I&apos;m Rawisut! I&apos;m a recent graduate from the Generation Bootcamp in Junior Software Development and hold a Bachelor&apos;s degree in Earth Sciences (Geology).</p>

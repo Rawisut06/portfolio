@@ -22,12 +22,12 @@ function SkillCard() {
         <a
           key={index}
           href={skill.url}
-          className="flex flex-col items-center w-24 h-24 gap-2 p-2 transition-shadow bg-gray-200 shadow-lg rounded-xl hover:shadow-xl"
+          className="flex flex-col items-center w-24 h-24 gap-2 p-2 rounded-lg bg-clr-secondary "
         >
           <skill.icon
             className="text-6xl"
           />
-          <span className="text-sm font-medium text-gray-700">{skill.name.toUpperCase()}</span>
+          <span className="text-sm font-medium text-background">{skill.name.toUpperCase()}</span>
         </a>
       ))}
     </div>

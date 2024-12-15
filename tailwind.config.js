@@ -8,7 +8,8 @@ export default {
     extend: {
       colors: {
         background: "rgba(var(--background))",
-        "clr-primary": "rgba(var(--clr-primary))"
+        "clr-primary": "rgba(var(--clr-primary))",
+        "clr-secondary": "rgba(var(--clr-secondary))"
       }
     },
   },

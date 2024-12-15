@@ -6,10 +6,10 @@ function Contact() {
   const [state, handleSubmit] = useForm("mzzbqwnn");
 
   return (
-    <section id="contact" className="text-center bg-background text-clr-primary">
+    <section id="contact" className="py-20 text-center bg-background text-clr-primary">
       <div className="max-w-[1280px] mx-auto flex flex-col items-center space-y-20 h-fit">
         {/* Title */}
-        <h2 className="text-primary">Contact Me</h2>
+        <h1 className="relative text-primary w-fit">Contact Me <div className="absolute w-[40%] h-2 top-14 bg-clr-secondary" /> </h1>
         <div className="flex justify-between gap-8">
           <div className="flex flex-col justify-center w-1/2 gap-8">
             <p className="text-ternary">
@@ -22,15 +22,17 @@ function Contact() {
               <Button
                 name="Email Me"
                 link="mailto:tungtung0685@gmail.com"
+                rel="noopener noreferrer"
                 icon={FaEnvelope}
-                className="flex items-center p-2 border-2 border-clr-primary hover:border-background hover:bg-clr-primary hover:text-background"
+                className="flex items-center p-2 border-2 border-clr-primary"
               />
 
               <Button
                 name="Github"
                 link="https://github.com/rawisut"
+                rel="noopener noreferrer"
                 icon={FaGithub}
-                className="flex items-center p-2 border-2 size-fit border-clr-primary hover:border-background hover:bg-clr-primary hover:text-background"
+                className="flex items-center p-2 border-2 size-fit border-clr-primary"
               />
 
             </div>
@@ -39,7 +41,7 @@ function Contact() {
           {/* Contact Form */}
           <form
             onSubmit={handleSubmit}
-            className="max-w-md mx-auto w-[50%] bg-background border-clr-primary border-2 b p-6 shadow"
+            className="max-w-md mx-auto w-[50%] bg-background border-clr-primary hover-shadow border-2 b p-6 shadow"
           >
             {state.succeeded && (
               <div className="mb-4 font-bold text-green-500">
@@ -104,7 +106,7 @@ function Contact() {
               <button
                 type="submit"
                 disabled={state.submitting}
-                className={`flex items-center p-2 border-2 border-clr-primary hover:border-background hover:bg-clr-primary hover:text-background ${
+                className={`flex items-center p-2 border-2 hover-btn-bg ${
                   state.submitting ? "opacity-50 cursor-not-allowed" : ""
                 }`}
               >
