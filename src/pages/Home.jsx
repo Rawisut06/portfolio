@@ -12,7 +12,7 @@ function Home() {
           <br />
           <div className="flex justify-center gap-6">
             <Button
-              link="src/assets/my-cv/cv.pdf"
+              link="my-cv/cv.pdf"
               target="_blank"
               rel="noopener noreferrer"
               name="Download CV"
