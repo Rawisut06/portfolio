@@ -12,7 +12,7 @@ function Home() {
           <br />
           <div className="flex justify-center gap-6">
             <Button
-              link="src/assets/cv-resume/cv-resume_draft2.pdf"
+              link="src/assets/my-cv/cv.pdf"
               target="_blank"
               rel="noopener noreferrer"
               name="Download CV"
@@ -27,9 +27,6 @@ function Home() {
             </Button>
           </div>
         </div>
-        {/* <div className="flex justify-center w-1/2">
-          <img className="w-3/4" src="/src/assets/react.svg"/>
-        </div> */}
       </div>
     </section>
   )
