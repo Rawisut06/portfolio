@@ -11,7 +11,7 @@ function Navbar() {
       <nav
         className="bg-background text-clr-primary">
         <div className="max-w-[1280px] mx-auto flex items-center justify-between p-4">
-          <span className="text-ternary">Rawisut Wannasopha</span>
+          <span className="text-xl font-bold uppercase">Rawisut</span>
           <ul className="flex space-x-8 text-ternary">
             <li>
               <a className="relative group" href="/#home">

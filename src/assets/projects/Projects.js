@@ -8,11 +8,11 @@ const projects = [
     skills: ["Tailwind CSS", "JavaScript", "React"],
   },
   {
-    name: "Raptor Trooper E-Commerce Website",
-    description: "A responsive e-commerce platform for online shopping using MERN tech stack",
+    name: "Handy Heaven E-Commerce Website",
+    description: "A responsive e-commerce platform for online shopping using MERN tech stack, final project in Generation Bootcamp",
     image: "/src/assets/projects/raptor-trooper.png",
-    link: "https://ecommerce-app-link.com",
-    github: "",
+    link: "https://jsd-8-raptor-trooper-website.vercel.app/",
+    github: "https://github.com/Raptor-trooper/JSD8_raptor_trooper_website",
     skills: ["React", "Tailwind CSS", "Express", "MongoDB"],
   },
   {

@@ -1,8 +1,10 @@
+import Heading from "../components/Heading"
+
 function About() {
   return (
     <section className="py-20 text-center bg-background text-clr-primary" id="about">
       <div className="max-w-[1280px] mx-auto flex flex-col items-center space-y-20 h-screen">
-        <h1 className="relative text-primary w-fit">About Me <div className="absolute w-[40%] h-2 top-14 bg-clr-secondary" /> </h1>
+        <Heading name="About Me" />
         <div className="flex flex-col items-center gap-4 justify-stretch md:flex-row">
           <div className="flex justify-center w-1/2">
             <img className="object-contain w-1/2 rounded-lg" src="/src/assets/about-img.jpg" alt="about-img" />

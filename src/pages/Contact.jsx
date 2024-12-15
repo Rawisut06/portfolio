@@ -1,6 +1,7 @@
 import { FaGithub, FaEnvelope } from "react-icons/fa";
 import Button from "../components/Button";
 import { useForm, ValidationError } from '@formspree/react';
+import Heading from "../components/Heading";
 
 function Contact() {
   const [state, handleSubmit] = useForm("mzzbqwnn");
@@ -9,7 +10,7 @@ function Contact() {
     <section id="contact" className="py-20 text-center bg-background text-clr-primary">
       <div className="max-w-[1280px] mx-auto flex flex-col items-center space-y-20 h-fit">
         {/* Title */}
-        <h1 className="relative text-primary w-fit">Contact Me <div className="absolute w-[40%] h-2 top-14 bg-clr-secondary" /> </h1>
+        <Heading name="Contact Me" />
         <div className="flex justify-between gap-8">
           <div className="flex flex-col justify-center w-1/2 gap-8">
             <p className="text-ternary">

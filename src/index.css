@@ -16,8 +16,8 @@
 }
 
 .dark {
-  --background: 255, 255, 255;
-  --clr-primary: 0, 0, 0;
+  --background: 235, 235, 235;
+  --clr-primary: 20, 20, 20;
   --clr-secondary: 84, 101, 255;
 
 }
