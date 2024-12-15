@@ -17,7 +17,7 @@ function SkillCard() {
     { name: "mongoDb", icon: MongoDB, url: "https://www.mongodb.com/" },
   ];
   return (
-    <div className="flex flex-wrap gap-8">
+    <div className="grid grid-cols-2 gap-8 sm:grid-cols-3 lg:grid-cols-7 md:grid-cols-4">
       {skills.map((skill, index) => (
         <a
           key={index}

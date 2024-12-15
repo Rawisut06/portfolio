@@ -7,19 +7,24 @@ function Contact() {
   const [state, handleSubmit] = useForm("mzzbqwnn");
 
   return (
-    <section id="contact" className="py-20 text-center bg-background text-clr-primary">
-      <div className="max-w-[1280px] mx-auto flex flex-col items-center space-y-20 h-fit">
+    <section id="contact" className="p-4 py-20 text-center bg-background text-clr-primary">
+      <div className="md:max-w-[1280px] mx-auto w-full flex flex-col items-center space-y-20 h-fit">
         {/* Title */}
         <Heading name="Contact Me" />
-        <div className="flex justify-between gap-8">
-          <div className="flex flex-col justify-center w-1/2 gap-8">
-            <p className="text-ternary">
+        <div className="flex flex-col items-center justify-center gap-8 md:flex-row">
+          <div className="flex flex-col items-center justify-center w-1/3 h-full gap-16 py-8">
+            <p className="text-left text-secondary">
               I&apos;m always open to new opportunities and collaborations. Let&apos;s connect!
             </p>
 
             {/* Contact Options */}
 
-            <div className="flex justify-center gap-8">
+            <div className="space-y-4 text-left font-ternary">
+              <p><span className="font-bold">Email: </span><a href="mailto:tungtung0685@gmail.com">tungtung0685@gmail.com</a></p>
+              <p><span className="font-bold">Phone: </span><span>(+66)-92-259-6056</span></p>
+            </div>
+
+            <div className="flex flex-col justify-center gap-8 sm:flex-row">
               <Button
                 name="Email Me"
                 link="mailto:tungtung0685@gmail.com"
@@ -42,7 +47,7 @@ function Contact() {
           {/* Contact Form */}
           <form
             onSubmit={handleSubmit}
-            className="max-w-md mx-auto w-[50%] bg-background border-clr-primary hover-shadow border-2 b p-6 shadow"
+            className="mx-auto md:w-[40%] w-full bg-background border-clr-primary hover-shadow border-2 p-6 shadow"
           >
             {state.succeeded && (
               <div className="mb-4 font-bold text-green-500">

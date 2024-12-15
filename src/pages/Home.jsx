@@ -8,7 +8,7 @@ function Home() {
           <h1 className="pb-2 text-primary">Hello, I&apos;m <span className="font-bold text-clr-secondary">Rawisut</span></h1>
           {/* <h1 className="pb-4 text-secondary">A passion fullstack developer</h1> */}
           <br />
-          <p className="pb-6 text-ternary"><span className="font-bold text-clr-secondary">Aspiring full-stack developer</span>, eager to learn and build impactful web applications</p>
+          <p className="pb-6 text-ternary">Aspiring<span className="font-bold text-clr-secondary"> full-stack developer</span>, eager to learn and build impactful web applications</p>
           <br />
           <div className="flex justify-center gap-6">
             <Button

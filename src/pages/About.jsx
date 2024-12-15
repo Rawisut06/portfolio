@@ -3,10 +3,10 @@ import Heading from "../components/Heading"
 function About() {
   return (
     <section className="py-20 text-center bg-background text-clr-primary" id="about">
-      <div className="max-w-[1280px] mx-auto flex flex-col items-center space-y-20 h-screen">
+      <div className="max-w-[1280px] mx-auto flex flex-col items-center space-y-20 h-fit md:h-screen">
         <Heading name="About Me" />
-        <div className="flex flex-col items-center gap-4 justify-stretch md:flex-row">
-          <div className="flex justify-center w-1/2">
+        <div className="flex flex-col items-center justify-center gap-4 px-4 md:flex-row">
+          <div className="flex justify-center w-full md:w-1/2">
             <img className="object-contain w-1/2 rounded-lg" src="images/about-img.JPG" alt="about-img" />
           </div>
           <div className="w-1/2 text-left text-ternary">
