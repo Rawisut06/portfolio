@@ -1,4 +1,5 @@
 import Button from "../components/Button"
+import CV from "../assets/my-cv/cv.pdf"
 
 function Home() {
   return (
@@ -12,7 +13,7 @@ function Home() {
           <br />
           <div className="flex justify-center gap-6">
             <Button
-              link="my-cv/cv.pdf"
+              link={CV}
               target="_blank"
               rel="noopener noreferrer"
               name="Download CV"
