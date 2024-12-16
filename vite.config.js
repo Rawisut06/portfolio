@@ -7,5 +7,6 @@ export default defineConfig({
     react(),
     svgr(),
   ],
+  assetsInclude: ['**/*.JPG'],
 });
 

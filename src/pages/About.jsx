@@ -1,4 +1,5 @@
 import Heading from "../components/Heading"
+import MyImage from "../images/projects/about-img.JPG"
 
 function About() {
   return (
@@ -7,7 +8,7 @@ function About() {
         <Heading name="About Me" />
         <div className="flex flex-col items-center justify-center gap-4 px-4 md:flex-row">
           <div className="flex justify-center w-full md:w-1/2">
-            <img className="object-contain w-1/2 rounded-lg" src="images/about-img.JPG" alt="about-img" />
+            <img className="object-contain w-1/2 rounded-lg" src={MyImage} alt="about-img" />
           </div>
           <div className="w-1/2 text-left text-ternary">
             <p>Hi, I&apos;m Rawisut! I&apos;m a recent graduate from the Generation Bootcamp in Junior Software Development and hold a Bachelor&apos;s degree in Earth Sciences (Geology).</p>
